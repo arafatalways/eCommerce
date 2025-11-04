@@ -1,7 +1,7 @@
 import { Footer } from "@/components/layout/Footer";
 import { HeroSection } from "@/components/layout/HeroSection";
 import { Navbar } from "@/components/layout/Navbar";
-import { Shop } from "@/components/layout/ShopByProduct";
+import { ShopByProduct } from "@/components/layout/ShopByProduct";
 
 function App() {
   return (
@@ -10,7 +10,7 @@ function App() {
         <h4>
           <Navbar />
           <HeroSection />
-          <Shop />
+          <ShopByProduct />
           <Footer />
         </h4>
       </div>
