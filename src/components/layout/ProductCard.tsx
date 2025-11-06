@@ -1,5 +1,6 @@
 import type { IProductSlice } from "@/interface/Interface";
 import { FaStar } from "react-icons/fa";
+import { Link } from "react-router";
 
 export const ProductCard = ({
   productSlice,
@@ -19,9 +20,11 @@ export const ProductCard = ({
         <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition duration-500"></div>
 
         {/* Quick Action Button */}
-        <button className="absolute bottom-4 right-4 bg-gradient-to-r from-blue-500 to-indigo-500 text-white text-sm font-semibold px-4 py-2 rounded-lg opacity-0 group-hover:opacity-100 transition-all duration-300 hover:from-indigo-500 hover:to-pink-500">
-          Add to Cart
-        </button>
+        <Link to="/add">
+          <button className="absolute bottom-4 right-4 bg-gradient-to-r from-blue-500 to-indigo-500 text-white text-sm font-semibold px-4 py-2 rounded-lg opacity-0 group-hover:opacity-100 transition-all duration-300 hover:from-indigo-500 hover:to-pink-500">
+            Add to Cart
+          </button>
+        </Link>
       </div>
 
       {/* Product Info */}

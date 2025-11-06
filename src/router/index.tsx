@@ -1,3 +1,4 @@
+import { ProductAdd } from "@/components/layout/ProductAdd";
 import { AboutPage } from "@/pages/AboutPage";
 import { FashionPage } from "@/pages/FashionPage";
 import { FrontLayout } from "@/pages/FrontLayout";
@@ -25,6 +26,10 @@ export const router = createBrowserRouter([
       {
         path: "/about",
         Component: AboutPage,
+      },
+      {
+        path: "/add",
+        Component: ProductAdd,
       },
     ],
   },

@@ -97,9 +97,9 @@ export const Navbar = () => {
               </li>
             </Link>
 
-            <Link to={"/shop"}>
+            <Link to={"/fashion"}>
               <li className="hover:text-blue-500 cursor-pointer transition">
-                Contact
+                Fashion
               </li>
             </Link>
 
